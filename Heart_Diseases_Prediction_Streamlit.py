@@ -37,12 +37,12 @@ model.fit(X_train, y_train)
 # =======================
 # Streamlit UI
 # =======================
-st.title("💓 Heart Disease Prediction App")
+st.title("💓 Heart Disease Prediction Web App")
 st.write("Enter the patient's details below to predict the risk of heart disease.")
 
 # Sidebar inputs
 age = st.slider('Age', 18, 100, 29)
-sex = st.selectbox('Sex', ['Male', 'Female'])  # 1 = Male, 0 = Female
+sex = st.selectbox('Sex', ['Male', 'Female'])  # 1 = Male, 0 = Female 
 chest_pain = st.selectbox('Chest Pain Type', ['Typical Angina', 'Atypical Angina', 'Non-anginal Pain', 'Asymptomatic'])  # 0–3
 resting_bp = st.slider('Resting Blood Pressure (mm Hg)', 80, 200, 120)
 cholesterol = st.slider('Cholesterol (mg/dl)', 100, 600, 200)
